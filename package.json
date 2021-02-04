@@ -1,0 +1,21 @@
+{
+    "name": "drones21",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "purgecss --css scss/prueba.css --content pages/topografia.html -o scss/reducido.css",
+        "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+        "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^5.0.0",
+        "nodemon": "^2.0.6"
+    },
+    "dependencies": {
+        "bootstrap": "^5.0.0-beta1"
+    },
+    "description": ""
+}

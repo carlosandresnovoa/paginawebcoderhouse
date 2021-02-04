@@ -1,0 +1,46 @@
+/**CSS DE MI PAGINA CONTACTO*/
+
+:root {
+    --dart: #16191c;
+    --dart-x: #1e2126;
+    --ligth: #ffff;
+}
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    color: var(--ligth);
+    letter-spacing: 2px;
+}
+
+.bg-dart {
+    background-color: var(--dart) !important;
+}
+
+.bg-dart-x {
+    background-color: var(--dart);
+}
+
+.forn-control {
+    min-height: 3.125rem;
+    line-height: initial;
+}
+
+.img-1 {
+    background-image: url(../images/agricultura/drones3drones.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url(../images/topografia/colombia3drones.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-1 {
+    font-size: 200%;
+    text-align: center;
+    vertical-align: bottom;
+    color: black;
+}

@@ -1,0 +1,1020 @@
+/** CSS DE MI PAGINA INDEX*/
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/Lato-Regular.ttf);
+    /* font-weight: bold; */
+    font-style: style;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/** CSS DE MI PAGINA Iagricultura*/
+
+.videoAgricultura {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productDetalle1 {
+    display: grid;
+    grid-template-rows: 170px 1fr;
+    padding: 60px 60px 30px 60px;
+}
+
+
+/** CSS DE MI PAGINA TOPOGRAFIA*/
+
+.contenedorMenu {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    z-index: 10;
+    background-color: #298dffd2;
+}
+
+.contenedorMenu .logot {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contenedorMenu .navegation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.contenedorMenu .navegation li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.contenedorMenu .navegation li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.contenedorMenu .navegation li a:hover {
+    color: #0c0d18;
+}
+
+.contenedorMenu .buscador {
+    position: relative;
+    width: 300px;
+    height: 40px;
+}
+
+.contenedorMenu .buscador input {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 25px;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 0 15px 0 45px;
+    letter-spacing: 1px;
+}
+
+.contenedorMenu .buscador input::placeholder {
+    color: white;
+}
+
+.contenedorMenu .buscador .fa-search {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: rgb(8, 3, 3);
+    border-right: 1px solid rgb(8, 7, 7);
+    padding-right: 10px;
+}
+
+
+/* BANNER PRINCIPAL  */
+
+.banner {
+    position: relative;
+    background: rgb(7, 0, 0);
+    padding: 90px 50px 50px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* section::before {
+    content: '';
+    background: rgb(7, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vh;
+    height: 40vh;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) scale(4);
+} */
+
+.banner content {
+    position: relative;
+    max-width: 700px;
+}
+
+.banner .content h2 {
+    font-size: 5rem;
+    background: linear-gradient(10deg, #01010a, rgb(97, 80, 250));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+.banner .content h3 {
+    font-size: 3rem;
+    background: linear-gradient(10deg, #858282, rgb(248, 248, 248));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner .content p {
+    font-size: 1.1rem;
+    background: linear-gradient(10deg, #858282, rgb(248, 248, 248));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner .content a {
+    display: inline-block;
+    background: rgb(57, 172, 34);
+    padding: 8px 20px;
+    border-radius: 19px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    transition-duration: 1s;
+}
+
+.imageDrone {
+    animation: fadeInBottomRight;
+    animation-duration: 2s;
+    display: flex;
+}
+
+@keyframes animacion-drone {
+    0% {
+        left: 0;
+        top: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    .videoAgricultura {
+        margin-top: 600px;
+    }
+    .contenedorMenu {
+        padding: 10px 20px;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .banner {
+        padding: 90px 60px 50px;
+        flex-direction: column-reverse;
+    }
+    .banner .image {
+        /* margin: 10px; */
+        max-width: 130%;
+        margin: auto;
+        width: 480px;
+        height: 315px;
+    }
+    .banner .content h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .banner .content h3 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .banner .content P {
+        text-align: center;
+        margin-top: 10px;
+    }
+    .boton-w {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedorMenu .buscador {
+        width: 100%;
+    }
+    .banner .imageDrone {
+        /* margin-top: 1px; */
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedorMenu .buscador input {
+        width: 450px;
+        height: 25px;
+    }
+}
+
+
+/* FOODER DE LA PAGINA WEB */
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 30px;
+    height: auto;
+    width: 100vw;
+    font-family: 'Anton', sans-serif;
+}
+
+.content_fooder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(60deg, #0c0d18, rgb(8, 9, 43));
+    color: rgb(255, 255, 255);
+    padding-top: 40px;
+}
+
+.content_fooder h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.content_fooder p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 15px;
+}
+
+.social_media {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.social_media li {
+    margin: 0 20px;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: white;
+}
+
+.social_media a i {
+    font-size: 30px;
+    transition: color .5 ease;
+}
+
+.social_media a:hover i {
+    color: #0178ffd2
+}
+
+.footer_botton {
+    background: black;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer_botton p {
+    word-spacing: 4px;
+    text-transform: capitalize;
+}
+
+.footer_botton span {
+    text-transform: uppercase;
+    opacity: .2;
+}
+
+
+/* TARJETAS INFORMATIVAS CARD HOVER 3D */
+
+.card_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
+.caracteristicasTextos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: linear-gradient(10deg, #01010a, rgb(97, 80, 250));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: pulse;
+    animation-duration: 2s;
+    font-size: 15px;
+}
+
+.caracteristicasTextos h5 {
+    font-size: 3rem;
+}
+
+.conteiner_card {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.conteiner_card .card {
+    position: relative;
+    width: 450px;
+    height: 200px;
+    align-items: center;
+    margin: 10px;
+}
+
+.conteiner_card .card .face {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.conteiner_card .card .face.face1 {
+    background: linear-gradient(10deg, #564e79, rgb(110, 99, 252));
+    /* -webkit-text-fill-color: transparent;
+    -webkit-background-clip: ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform-origin: bottom;
+}
+
+.conteiner_card .card .face.face1 img {
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner_card .card .face.face1 h3 {
+    margin: 10px 0 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.conteiner_card .card:hover .face.face1 {
+    transform: translateY(-100%) rotateX(90deg);
+    background: linear-gradient(10deg, #d7dcf0, rgb(81, 132, 241));
+    ;
+}
+
+.conteiner_card .card .face.face2 {
+    background: linear-gradient(10deg, #060f63, rgb(1, 1, 5));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transform-origin: top;
+    transform: translateY(100%) rotateX(90deg);
+}
+
+.conteiner_card .card:hover .face.face2 {
+    transform: translateY(0) rotateX(0deg);
+}
+
+.conteiner_card .card:hover .face.face2 p {
+    color: white;
+}
+
+
+/* <!-- presentacion de productos ecommerce --> */
+
+.ecommerce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 100vh; */
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card_ecom {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card_ecom .card-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card_ecom .card-circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(82, 84, 228);
+    clip-path: circle(120px at center);
+    transition: 0.5s
+}
+
+.card_ecom:hover .card-circle:before {
+    background: black;
+    clip-path: circle(400px at center);
+}
+
+.card_ecom img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+    align-items: center;
+}
+
+.card_ecom:hover img {
+    left: 85%;
+    height: 300px;
+}
+
+.card_ecom .content_ecom {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card_ecom:hover .content_ecom {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.card_ecom .content_ecom h4 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 15px;
+}
+
+.card_ecom .content_ecom p {
+    color: white;
+}
+
+.card_ecom .content_ecom a {
+    position: relative;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: rgb(10, 224, 46);
+    color: black;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .card_cont .conteiner_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card_cont {
+        margin-top: 10px;
+    }
+    .caracteristicasTextos h5 {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25px;
+    }
+    .card_ecom {
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .card_ecom:hover {
+        height: 600px;
+    }
+    .card_ecom .content_ecom {
+        width: 100%;
+        left: 0%;
+        padding: 30px;
+    }
+    .card_ecom:hover img {
+        top: 70%;
+        left: 50%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 420px) {
+    .caracteristicasTextos h5 {
+        font-size: 2rem;
+        margin-top: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_cont .conteiner_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .card_ecom .content_ecom {
+        padding: 20px;
+    }
+    .card_ecom {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .card_cont .conteiner_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+/* BANER DE MITAD DE PAGINA */
+
+.bannerTopo {
+    position: relative;
+    background: rgb(253, 253, 255);
+    padding: 90px 50px 50px;
+    min-height: 100vh;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+section::before {
+    content: '';
+    background: rgb(7, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100vh;
+    height: 40vh;
+    border-radius: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) scale(4);
+}
+
+.bannerTopo .contentTopo {
+    position: relative;
+    max-width: 900px;
+    display: columnflex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerTopo .contentTopo h3 {
+    font-size: 7rem;
+    background: linear-gradient(10deg, #d3d3d3, rgb(187, 186, 186));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin: 30px 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    transform: scaleY(2);
+    letter-spacing: 50px;
+    margin-bottom: 50px;
+}
+
+.bannerTopo .contentTopo p {
+    font-size: 1.1rem;
+    background: linear-gradient(10deg, #0f0707, rgb(10, 3, 3));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.bannerTopo a {
+    display: inline-block;
+    background: rgb(54, 202, 25);
+    padding: 8px 20px;
+    border-radius: 19px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerTopo .bottonW a {
+    margin: 5px;
+}
+
+.imageDrone {
+    animation: fadeInBottomRight;
+    animation-duration: 2s;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 140vh;
+}
+
+h2 {
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 5rem;
+    background: linear-gradient(10deg, #01010a, rgb(97, 80, 250));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+@keyframes animacion-drone {
+    0% {
+        left: 0;
+        top: 300px;
+    }
+}
+
+@media (max-width: 991px) {
+    .contenedorMenu {
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    .bannerTopo {
+        /* padding: 90px 60px 50px; */
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 5rem;
+        text-align: center;
+    }
+    .bannerTopo .imageDrone {
+        /* margin: 10px; */
+        /* max-width: 100%; */
+        /* padding: 90px 60px 50px; */
+        flex-direction: column;
+    }
+    .bannerTopo .contentTopo h3 {
+        font-size: 3rem;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .bannerTopo .contentTopo P {
+        text-align: center;
+    }
+    .boton-w {
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenedorMenu .buscador {
+        width: 100%;
+    }
+    .bannerTopo .imageDrone {
+        /* margin-top: 1px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contenedorMenu .buscador input {
+        width: 450px;
+        height: 25px;
+    }
+    .imageTopo {
+        width: 450px;
+        height: 425px;
+        overflow: hidden;
+    }
+    h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+}
+
+
+/* TESTIMONIOS */
+
+.center-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* PAGINA TOPOGRAFIA  */
+
+.bannerGrafia {
+    position: relative;
+    background-image: url("../images/agricultura/descarga.jpg");
+    padding: 90px 50px 50px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerGrafia1 {
+    position: relative;
+    background-image: url("../images/agricultura/agricultura1.jpg");
+    padding: 90px 50px 50px;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+h4 {
+    position: relative;
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 5rem;
+    background: linear-gradient(10deg, #f5f5fa, rgb(244, 244, 250));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: pulse;
+    animation-duration: 2s;
+}
+
+.sectionProduct {
+    background: rgb(253, 250, 250);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 390px;
+    margin-left: 10px;
+}
+
+.product-images {
+    background-image: url("../images/agricultura/drones-para-fumigar.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-images1 {
+    background-image: url("../images/singlebanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.productDetalle {
+    display: grid;
+    grid-template-rows: 170px 1fr;
+    padding: 60px 60px 30px 60px;
+}
+
+.productBlack {
+    display: flex;
+    align-items: center;
+}
+
+.productBlack i {
+    font-size: 25px;
+}
+
+.black-btn-copy {
+    margin: 0;
+    margin-top: -4px;
+    margin-left: 10px;
+    background: linear-gradient(10deg, #01010a, rgb(97, 80, 250));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: pulse;
+    animation-duration: 2s;
+    font-size: 2rem;
+}
+
+.black-btn-copy h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.productDescripcio {
+    display: grid;
+    grid-template-rows: 100px 80px 1fr 50px;
+}
+
+.copyProduct {
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.productNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.link-active {
+    font-weight: 800;
+}
+
+.productName {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(14, 11, 11);
+    margin-bottom: 15px;
+}
+
+.productCta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productQuality {
+    display: flex;
+    align-items: center;
+}
+
+.productAmount {
+    margin: 0 10px;
+}
+
+.productAmount {
+    margin: 0 10px;
+}
+
+.qualityIcon {
+    width: 20px;
+    height: 20px;
+    border: 5px solid var(--main);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: rgb(236, 222, 248);
+}
+
+.qualityIcon i {
+    font-size: 9px;
+}
+
+.btn-add-product {
+    border: none;
+    border-radius: 12px 15px;
+    padding: 8px 5px;
+    background: rgb(64, 207, 45);
+    animation: pulse;
+    animation-duration: 2s;
+    transition-duration: 1s;
+}
+
+@media (max-width:895px) {
+    .sectionProduct {
+        display: block;
+        height: 300px;
+        width: 90%;
+    }
+    .product-images {
+        height: 500px;
+        background-position: center 60%;
+    }
+    .productBlack {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-weight: 600;
+    }
+    .productNav {
+        display: none;
+    }
+    .productDetalle {
+        display: block;
+    }
+    .copyProduct {
+        margin: 30px 0;
+    }
+    .productDescripcio {
+        grid-template-rows: 100px 1fr 50px;
+    }
+}
+
+
+/* PAGINA DE NOSOTROS */
+
+.nosotrosBanner {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: 700px;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.imagenNosotros {
+    background-image: url("../images/dronenosotros.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nosotrosDescripcion {
+    display: grid;
+    grid-template-rows: 170px 1fr;
+    padding: 60px 60px 30px 60px;
+}
+
+.nosotrosDescripcion p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
